@@ -1,7 +1,7 @@
 {
   "name": "sizzle",
   "description": "A pure-JavaScript CSS selector engine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://sizzlejs.com/",
   "authors": ["John Resig"],
   "repository": {

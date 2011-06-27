@@ -1,5 +1,5 @@
 !function (doc) {
-
+  var Sizzle = require('sizzle')
   var table = 'table',
       nodeMap = {
         thead: table,
