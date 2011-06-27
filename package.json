@@ -1,0 +1,13 @@
+{
+  "name": "sizzle",
+  "description": "A pure-JavaScript CSS selector engine",
+  "version": "1.0.0",
+  "homepage": "http://sizzlejs.com/",
+  "authors": ["John Resig"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ded/sizzle.git"
+  },
+  "main": "./sizzle.js",
+  "ender": "./ender.js"
+}
