@@ -25,7 +25,15 @@
     return els;
   }
   $._select = function (s, r) {
-    return /^\s*</.test(s) ? create(s, r) : Sizzle(s, r);
+    if (/^\s*</.test(s)) {
+      return create(s, r);
+    } else if (s.nodeType) {
+      return [s];
+    } else if (typeof r == 'string') {
+      return Sizzle(s, Sizzle(r)[0]);
+    } else if (typeof r == 'object' && isFinite(r.length)) {
+      return Sizzle(s, r[0]);
+    }
   };
 
   $.ender({
